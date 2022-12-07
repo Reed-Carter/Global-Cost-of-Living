@@ -19,8 +19,6 @@ lat_long_df = pd.read_csv(with_lat_long_file, header=0,
                       usecols=["latitude", "longitude", 'Gasoline (1 liter) (USD)','country'])
 #creates a new column averaging the gas price per country
 lat_long_df['avg_gas_price_per_country'] = np.round(lat_long_df.groupby(['country'])[['Gasoline (1 liter) (USD)']].transform(np.mean), decimals = 1)
-#drop the rows with the nan values in the 'avg_gas_price_per_country' column
-lat_long_df.dropna(subset=['avg_gas_price_per_country'], inplace=True)
 #drop the duplicates to only present one country and its average price of gas
 lat_long_df.drop_duplicates(ignore_index=True, subset=['country','avg_gas_price_per_country'], inplace=True)
 
@@ -53,7 +51,4 @@ merged_df.plot(column='avg_gas_price_per_country', scheme="quantiles",
            figsize=(17, 13.3),
            legend=True,cmap='coolwarm')
 plt.title('Average Gas Price Per Liter in USD',fontsize=50)
-# add countries names and numbers 
-for i in range(len(merged_df.CODE_x)):
-    plt.text(float(merged_df.longitude[i]),float(merged_df.latitude[i]),"{}\n{}".format(merged_df.CODE_x[i],merged_df['avg_gas_price_per_country'][i]),size=5)
 plt.show()
