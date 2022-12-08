@@ -72,3 +72,6 @@ plt.xlabel('Country')
 plt.ylabel('Average Gas Price (USD)')
 # show the chart
 plt.show()
+
+#bar chart showing the countries with the highest gas price
+
