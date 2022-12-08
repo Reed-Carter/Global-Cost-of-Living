@@ -52,3 +52,6 @@ merged_df.plot(column='avg_gas_price_per_country', scheme="quantiles", edgecolor
            legend=True,cmap='OrRd')
 plt.title('Average Gas Price Per Gallon in USD',fontsize=50)
 plt.show()
+
+#bar chart showing the countriest with the lowest gas price
+lat_long_df[['country','avg_gas_price_per_country']].sort_values(by='avg_gas_price_per_country').head(10)
