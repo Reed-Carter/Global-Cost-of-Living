@@ -4,4 +4,4 @@ matplotlib
 geopandas
 pycountry
 mapclassify
-mpldatacursor
+folium==0.12.1
