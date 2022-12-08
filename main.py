@@ -55,3 +55,20 @@ plt.show()
 
 #bar chart showing the countriest with the lowest gas price
 lat_long_df[['country','avg_gas_price_per_country']].sort_values(by='avg_gas_price_per_country').head(10)
+max_gas_price_dict = {
+    'Country': ['Libya', 'Algeria', 'Egypt', 'Angola', 'Brunei', 'Kuwait', 'Nigeria', 'Kazakhstan', 'Turkmenistan', 'Iran'],
+    'avg_price_per_country': [0.1, 1.1, 1.2, 1.2, 1.4, 1.4, 1.4, 1.5, 1.6, 1.7]
+ }
+min_prices = pd.DataFrame(max_gas_price_dict)
+# library
+# give your chart some style
+plt.style.use('dark_background')
+# # 1st arg is column for x-axis, 2nd arg is column for y-axis
+plt.bar(min_prices['Country'], max_gas_price_dict['avg_price_per_country'])
+#give the chart a title
+plt.title("Countries with the lowest gas price")  
+# label the x and y axes
+plt.xlabel('Country')
+plt.ylabel('Average Gas Price (USD)')
+# show the chart
+plt.show()
