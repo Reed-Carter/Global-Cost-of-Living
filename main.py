@@ -80,4 +80,16 @@ max_gas_price_dict = {
     'avg_price_per_country': [10.4, 8.8, 8.8, 8.7, 8.5, 8.4, 8.3, 8.2, 8.2, 8.0]
  }
 max_prices = pd.DataFrame(max_gas_price_dict)
+# library
+# give your chart some style
+plt.style.use('dark_background')
+# # 1st arg is column for x-axis, 2nd arg is column for y-axis
+plt.bar(max_prices['Country'], max_gas_price_dict['avg_price_per_country'])
+#give the chart a title
+plt.title("Countries with the highest gas price")  
+# label the x and y axes
+plt.xlabel('Country')
+plt.ylabel('Average Gas Price (USD)')
+# show the chart
+plt.show()
 
