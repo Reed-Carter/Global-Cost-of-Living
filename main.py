@@ -76,7 +76,7 @@ plt.show()
 #bar chart showing the countries with the highest gas price
 lat_long_df[['country','avg_gas_price_per_country']].sort_values(by='avg_gas_price_per_country').tail(30)
 max_gas_price_dict = {
-    'Country': ['Hong Kong', 'Yemen', 'Singapore', 'Finland', 'Bermuda', 'Germany', 'Netherlands', 'Greece', 'Eritrea', 'Italy'],
+    'Country': ['HKG', 'Yemen', 'SGP', 'Finland', 'BMU', 'DEU', 'NLD', 'GRC', 'Eritrea', 'Italy'],
     'avg_price_per_country': [10.4, 8.8, 8.8, 8.7, 8.5, 8.4, 8.3, 8.2, 8.2, 8.0]
  }
 max_prices = pd.DataFrame(max_gas_price_dict)
