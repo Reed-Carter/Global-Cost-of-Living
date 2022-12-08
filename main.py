@@ -16,9 +16,9 @@ import matplotlib.pyplot as plt
 
 with_lat_long_file = "./data/data_with_lat_long.csv"
 lat_long_df = pd.read_csv(with_lat_long_file, header=0, 
-                      usecols=["latitude", "longitude", 'Gasoline (1 liter) (USD)','country'])
+                      usecols=["latitude", "longitude", 'Gasoline (1 liter) (USD)','country', 'gas_price_per_gallon'])
 #creates a new column averaging the gas price per country
-lat_long_df['avg_gas_price_per_country'] = np.round(lat_long_df.groupby(['country'])[['Gasoline (1 liter) (USD)']].transform(np.mean), decimals = 1)
+lat_long_df['avg_gas_price_per_country'] = np.round(lat_long_df.groupby(['country'])[['gas_price_per_gallon']].transform(np.mean), decimals = 1)
 #drop the duplicates to only present one country and its average price of gas
 lat_long_df.drop_duplicates(ignore_index=True, subset=['country','avg_gas_price_per_country'], inplace=True)
 
@@ -47,8 +47,8 @@ def rename_countries(value):
 world['country'] = world['country'].map(rename_countries)
 merged_df=pd.merge(world,lat_long_df,on='country')
 
-merged_df.plot(column='avg_gas_price_per_country', scheme="quantiles",
+merged_df.plot(column='avg_gas_price_per_country', scheme="quantiles", edgecolor="black",
            figsize=(17, 13.3),
-           legend=True,cmap='coolwarm')
-plt.title('Average Gas Price Per Liter in USD',fontsize=50)
+           legend=True,cmap='OrRd')
+plt.title('Average Gas Price Per Gallon in USD',fontsize=50)
 plt.show()
