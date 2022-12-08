@@ -52,3 +52,65 @@ merged_df.plot(column='avg_gas_price_per_country', scheme="quantiles", edgecolor
            legend=True,cmap='OrRd')
 plt.title('Average Gas Price Per Gallon in USD',fontsize=50)
 plt.show()
+
+#----------------------bar chart showing the countriest with the lowest gas price--------------------------------
+lat_long_df[['country','avg_gas_price_per_country']].sort_values(by='avg_gas_price_per_country').head(10)
+min_gas_price_dict = {
+    'Country': ['Libya', 'Algeria', 'Egypt', 'Angola', 'Brunei', 'KWT', 'Nigeria', 'KAZ', 'TKM', 'Iran'],
+    'avg_price_per_country': [0.1, 1.1, 1.2, 1.2, 1.4, 1.4, 1.4, 1.5, 1.6, 1.7]
+ }
+min_prices = pd.DataFrame(min_gas_price_dict)
+# library
+# give your chart some style
+plt.style.use('dark_background')
+# # 1st arg is column for x-axis, 2nd arg is column for y-axis
+plt.bar(min_prices['Country'], min_gas_price_dict['avg_price_per_country'])
+#give the chart a title
+plt.title("Countries with the lowest gas price")  
+# label the x and y axes
+plt.xlabel('Country')
+plt.ylabel('Average Gas Price (USD)')
+# show the chart
+plt.show()
+
+#bar chart showing the countries with the highest gas price
+lat_long_df[['country','avg_gas_price_per_country']].sort_values(by='avg_gas_price_per_country').tail(30)
+max_gas_price_dict = {
+    'Country': ['HKG', 'Yemen', 'SGP', 'Finland', 'BMU', 'DEU', 'NLD', 'GRC', 'Eritrea', 'Italy'],
+    'avg_price_per_country': [10.4, 8.8, 8.8, 8.7, 8.5, 8.4, 8.3, 8.2, 8.2, 8.0]
+ }
+max_prices = pd.DataFrame(max_gas_price_dict)
+# library
+# give your chart some style
+plt.style.use('dark_background')
+# # 1st arg is column for x-axis, 2nd arg is column for y-axis
+plt.bar(max_prices['Country'], max_gas_price_dict['avg_price_per_country'])
+#give the chart a title
+plt.title("Countries with the highest gas price")  
+# label the x and y axes
+plt.xlabel('Country')
+plt.ylabel('Average Gas Price (USD)')
+# show the chart
+plt.show()
+
+#---------------------displays a zoomable map showing the gas price of each country per gallong in USD----------------------------------
+# Create a world map to show distributions of users 
+import folium
+from folium.plugins import MarkerCluster
+#empty map
+world_map= folium.Map(tiles="cartodbpositron")
+marker_cluster = MarkerCluster().add_to(world_map)
+#for each coordinate, create circlemarker of gas prices per gallong in USD
+for i in range(len(lat_long_df)):
+        lat = lat_long_df.iloc[i]['latitude']
+        long = lat_long_df.iloc[i]['longitude']
+        radius=5
+        popup_text = """Country : {}<br>
+                    Gas Price : {}<br>"""
+        popup_text = popup_text.format(lat_long_df.iloc[i]['country'],
+                                   lat_long_df.iloc[i]['gas_price_per_gallon']
+                                   )
+        folium.CircleMarker(location = [lat, long], radius=radius, popup= popup_text, fill =True).add_to(marker_cluster)
+#show the map
+world_map
+
