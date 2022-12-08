@@ -14,6 +14,7 @@
 * geopandas
 * pycountry
 * mapclassify
+* folium
 
 ## Description
 
@@ -21,11 +22,14 @@ The main.py file contains numerous lines of code which display various images wh
 
 [<img src="./images/avg_gas_price_per_liter_USD.png" width="700"/>](./images/avg_gas_price_per_liter_USD.png)
 
+[<img src="./images/avg_mortgage_pmt_USD.png" width='700'/>](./images/avg_mortgage_pmt_USD.png)
+
 
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop
 * Navigate to the top level directory
+* Run 'pip install -r requirements.txt' to install all the requirements so that main.py can run correctly
 * Open main.py
 
 ## Known Bugs
