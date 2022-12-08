@@ -22,9 +22,9 @@ The main.py file contains numerous lines of code which display various images wh
 
 [<img src="./images/avg_gas_price_per_liter_USD.png" width="700"/>](./images/avg_gas_price_per_liter_USD.png)
 
-[<img src="./images/avg_mortgage_pmt_USD.png" width='700'/>](./images/avg_mortgage_pmt_USD.png)
+[<img src="./images/Rec_mortgage_pmt.png" width='700'/>](./images/Rec_mortgage_pmt.png)
 
-[<img src="/home/reedandrew18/global_cost_of_living/images/Countries_with_the_highest_gas_price.png" width ='700'/>](./images/Countries_with_the_highest_gas_price.png)
+[<img src="./images/Countries_with_the_highest_gas_price.png" width ='700'/>](./images/Countries_with_the_highest_gas_price.png)
 
 [<img src="./images/countries_with_the_lowest_gas_price.png" width ='700'/>](./images/countries_with_the_lowest_gas_price.png)
 
