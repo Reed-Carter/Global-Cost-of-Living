@@ -93,3 +93,24 @@ plt.ylabel('Average Gas Price (USD)')
 # show the chart
 plt.show()
 
+#displays a zoomable map showing the gas price of each country per gallong in USD
+# Create a world map to show distributions of users 
+import folium
+from folium.plugins import MarkerCluster
+#empty map
+world_map= folium.Map(tiles="cartodbpositron")
+marker_cluster = MarkerCluster().add_to(world_map)
+#for each coordinate, create circlemarker of user percent
+for i in range(len(lat_long_df)):
+        lat = lat_long_df.iloc[i]['latitude']
+        long = lat_long_df.iloc[i]['longitude']
+        radius=5
+        popup_text = """Country : {}<br>
+                    Gas Price : {}<br>"""
+        popup_text = popup_text.format(lat_long_df.iloc[i]['country'],
+                                   lat_long_df.iloc[i]['gas_price_per_gallon']
+                                   )
+        folium.CircleMarker(location = [lat, long], radius=radius, popup= popup_text, fill =True).add_to(marker_cluster)
+#show the map
+world_map
+
