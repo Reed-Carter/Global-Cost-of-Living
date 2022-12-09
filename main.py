@@ -125,3 +125,22 @@ def liter_to_gallon(value):
   gallon = value*3.785411784
   return gallon
 cities_lat_long['gas_price_per_gallon'] = cities_lat_long['gas_price_per_liter'].map(liter_to_gallon)
+# Create a world map to show distributions of users 
+import folium
+from folium.plugins import MarkerCluster
+#empty map
+world_map_cities= folium.Map(tiles="cartodbpositron")
+marker_cluster = MarkerCluster().add_to(world_map_cities)
+#for each coordinate, create circlemarker of user percent
+for i in range(len(cities_lat_long)):
+        lat = cities_lat_long.iloc[i]['lat']
+        long = cities_lat_long.iloc[i]['lng']
+        radius=5
+        popup_text = """City : {}<br>
+                    Gas Price : {}<br>"""
+        popup_text = popup_text.format(cities_lat_long.iloc[i]['city'],
+                                   cities_lat_long.iloc[i]['gas_price_per_gallon']
+                                   )
+        folium.CircleMarker(location = [lat, long], radius=radius, popup= popup_text, fill =True).add_to(marker_cluster)
+#show the map
+world_map_cities
