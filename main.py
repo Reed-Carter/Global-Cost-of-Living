@@ -124,7 +124,8 @@ cities_lat_long.dropna(subset=['gas_price_per_liter'], inplace=True)
 def liter_to_gallon(value):
   gallon = value*3.785411784
   return gallon
-cities_lat_long['gas_price_per_gallon'] = cities_lat_long['gas_price_per_liter'].map(liter_to_gallon)
+cities_lat_long['gas_price_per_gallon'] = np.round(cities_lat_long['gas_price_per_liter'].map(liter_to_gallon), decimals=2)
+
 # Create a world map to show distributions of users 
 import folium
 from folium.plugins import MarkerCluster
@@ -136,9 +137,9 @@ for i in range(len(cities_lat_long)):
         lat = cities_lat_long.iloc[i]['lat']
         long = cities_lat_long.iloc[i]['lng']
         radius=5
-        popup_text = """Country: {}<br>
-                        City : {}<br>
-                    Gas Price : {}<br>"""
+        popup_text = """Country: {} <br>
+                        City : {} <br>
+                    Gas Price : ${} <br>"""
         popup_text = popup_text.format(cities_lat_long.iloc[i]['country_y'], 
                                         cities_lat_long.iloc[i]['city'],
                                    cities_lat_long.iloc[i]['gas_price_per_gallon']
