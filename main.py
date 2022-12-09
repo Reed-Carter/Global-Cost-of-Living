@@ -17,6 +17,13 @@ import matplotlib.pyplot as plt
 with_lat_long_file = "./data/data_with_lat_long.csv"
 lat_long_df = pd.read_csv(with_lat_long_file, header=0, 
                       usecols=["latitude", "longitude", 'Gasoline (1 liter) (USD)','country', 'gas_price_per_gallon'])
+#manually add data for DRC
+lat_long_df.loc[len(lat_long_df.index)] = {'country': 'Dem. Rep. Congo' , 'gas_price_per_gallon': 5.277, 'latitude': 43.804133, 'longitude': -120.554201}
+lat_long_df.loc[len(lat_long_df.index)] = {'country': 'Congo' , 'gas_price_per_gallon': 3.79, 'latitude': 18.220833, 'longitude': -66.590149}
+lat_long_df.loc[len(lat_long_df.index)] = {'country': 'Central African Rep.' , 'gas_price_per_gallon': 9.104, 'latitude': 41.203322, 'longitude': -77.194525}
+lat_long_df.loc[len(lat_long_df.index)] = {'country': 'S. Sudan', 'gas_price_per_gallon': 4.062, 'latitude': 8.7666, 'longitude': 27.400066,}
+
+print(lat_long_df[lat_long_df.eq("Dem. Rep. Congo").any(1)])
 #creates a new column averaging the gas price per country
 lat_long_df['avg_gas_price_per_country'] = np.round(lat_long_df.groupby(['country'])[['gas_price_per_gallon']].transform(np.mean), decimals = 1)
 #drop the duplicates to only present one country and its average price of gas
@@ -38,7 +45,7 @@ lat_long_df['CODE']=alpha3code(lat_long_df.country)
 world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
 #rename the 'name' column to 'country to merge with my data set
 world.columns=['pop_est', 'continent', 'country', 'CODE', 'gdp_md_est', 'geometry']
-#rename United States of America to United States to be consistent with original data file. The DRC is also missing but there is no data on the DRC in our data set.
+#rename United States of America to United States to be consistent with original data file. The DRC and Myanma are also missing but there is no data on the DRC in our data set.
 def rename_countries(value):
     if value == "United States of America":
         return 'United States'
@@ -51,6 +58,10 @@ merged_df.plot(column='avg_gas_price_per_country', scheme="quantiles", edgecolor
            figsize=(17, 13.3),
            legend=True,cmap='OrRd')
 plt.title('Average Gas Price Per Gallon in USD',fontsize=50)
+#add countries names and numbers 
+# for i in range(len(merged_df.CODE_x)):
+#     plt.text(float(merged_df.longitude[i]),float(merged_df.latitude[i]),"{}\n{}".format(merged_df.CODE_x[i],merged_df['avg_gas_price_per_country'][i]),size=7)
+plt.style.use('_mpl-gallery-nogrid')
 plt.show()
 
 #----------------------bar chart showing the countriest with the lowest gas price--------------------------------
@@ -126,7 +137,7 @@ def liter_to_gallon(value):
   return gallon
 cities_lat_long['gas_price_per_gallon'] = np.round(cities_lat_long['gas_price_per_liter'].map(liter_to_gallon), decimals=2)
 
-# Create a world map to show distributions of users 
+# Create a world map to show global gas prices 
 import folium
 from folium.plugins import MarkerCluster
 #empty map
