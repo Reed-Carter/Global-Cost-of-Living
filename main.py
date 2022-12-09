@@ -114,3 +114,9 @@ for i in range(len(lat_long_df)):
 #show the map
 world_map
 
+#-----------another interactive world map displaying gas prices of all cities we have data on---------------------
+cities = pd.read_csv("./data/worldcities.csv", header=0)
+cities_lat_long = pd.merge(cities, cost_df, on='city')
+cities_lat_long = cities_lat_long.rename(columns={'Gasoline (1 liter) (USD)': 'gas_price_per_liter'})
+cities_lat_long.drop_duplicates(ignore_index=True, subset=['city', 'gas_price_per_liter'], inplace=True)
+cities_lat_long.dropna(subset=['gas_price_per_liter'], inplace=True)
