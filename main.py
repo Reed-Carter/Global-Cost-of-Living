@@ -126,7 +126,7 @@ def liter_to_gallon(value):
   return gallon
 cities_lat_long['gas_price_per_gallon'] = np.round(cities_lat_long['gas_price_per_liter'].map(liter_to_gallon), decimals=2)
 
-# Create a world map to show distributions of users 
+# Create a world map to show global gas prices 
 import folium
 from folium.plugins import MarkerCluster
 #empty map
