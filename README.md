@@ -20,6 +20,8 @@
 
 The main.py file contains numerous lines of code which display various images which indicate the different cost of living across the world. This information can be used to determine the cost of living across the world. A complete repository can be found here: https://github.com/Reed-Carter/Global-Cost-of-Living
 
+![world gas price](./images/world_gas_price_gif.gif)
+
 [<img src="./images/avg_gas_price_per_liter_USD.png" width="700"/>](./images/avg_gas_price_per_liter_USD.png)
 
 [<img src="./images/Rec_mortgage_pmt.png" width='700'/>](./images/Rec_mortgage_pmt.png)
@@ -27,8 +29,6 @@ The main.py file contains numerous lines of code which display various images wh
 [<img src="./images/Countries_with_the_highest_gas_price.png" width ='700'/>](./images/Countries_with_the_highest_gas_price.png)
 
 [<img src="./images/countries_with_the_lowest_gas_price.png" width ='700'/>](./images/countries_with_the_lowest_gas_price.png)
-
-[<img src="./images/folium map of avg gas prices.jpg" width ='700'/>](./images/folium map of avg gas prices.jpg)
 
 
 ## Setup/Installation Requirements
