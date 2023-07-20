@@ -5,3 +5,5 @@ geopandas
 pycountry
 mapclassify
 folium==0.12.1
+requests
+beautifulsoup4
