@@ -1,0 +1,566 @@
+Gasoline (1 liter),city,country
+2.05,Leuven, Belgium
+0.58,Saint Petersburg, Russia
+0.55,Samara, Russia
+0.32,Algiers, Algeria
+1.15,Eugene, United States
+1.62,Banja Luka, Bosnia And Herzegovina
+1.39,Guadalajara, Mexico
+0.34,Oran, Algeria
+1.42,Mexico City, Mexico
+1.40,Monterrey, Mexico
+1.54,Mostar, Bosnia And Herzegovina
+0.58,Yekaterinburg, Russia
+1.79,Sarajevo, Bosnia And Herzegovina
+1.62,Tuzla, Bosnia And Herzegovina
+1.37,Puebla, Mexico
+1.39,Puerto Vallarta, Mexico
+1.57,Burgas, Bulgaria
+1.76,Belgrade, Serbia
+2.34,Corfu, Greece
+1.36,Tijuana, Mexico
+1.65,Nassau, Bahamas
+1.65,Plovdiv, Bulgaria
+1.19,Osaka, Japan
+1.55,Sofia, Bulgaria
+1.70,Varna, Bulgaria
+1.74,Novi Sad, Serbia
+1.68,Podgorica, Montenegro
+1.14,Tokyo, Japan
+1.71,Osijek, Croatia
+1.66,Rijeka, Croatia
+0.98,New Taipei City, Taiwan
+0.49,Almaty, Kazakhstan
+0.49,Astana (Nur-Sultan), Kazakhstan
+1.85,Bratislava, Slovakia
+1.81,Zadar, Croatia
+1.76,Zagreb, Croatia
+1.73,Larnaca, Cyprus
+1.81,Limassol, Cyprus
+0.98,Abu Dhabi, United Arab Emirates
+1.64,Nicosia, Cyprus
+0.86,Dubai, United Arab Emirates
+1.85,Brno, Czech Republic
+1.75,Macao, Macao (China)
+1.10,Panama City, Panama
+2.00,Olomouc, Czech Republic
+1.99,Ostrava, Czech Republic
+1.90,Plzen, Czech Republic
+1.81,Prague, Czech Republic
+0.45,Johor Bahru, Malaysia
+1.12,Gaborone, Botswana
+0.46,Kuala Lumpur, Malaysia
+0.45,Kuching, Malaysia
+2.20,Aalborg, Denmark
+1.34,Kamloops, Canada
+2.20,Arhus, Denmark
+2.22,Copenhagen, Denmark
+0.45,Petaling Jaya, Malaysia
+1.76,Ljubljana, Slovenia
+1.66,Maribor, Slovenia
+2.22,Odense, Denmark
+0.93,Male, Maldives
+1.87,Alicante, Spain
+2.05,Barcelona, Spain
+1.86,Bilbao, Spain
+1.56,Lima, Peru
+2.32,Hamilton, Bermuda
+0.92,Tashkent, Uzbekistan
+1.81,Granada, Spain
+1.71,Las Palmas de Gran Canaria, Spain
+0.78,Ulaanbaatar, Mongolia
+1.85,Madrid, Spain
+2.00,Tallinn, Estonia
+1.81,Murcia, Spain
+1.97,Tartu, Estonia
+1.85,Oviedo, Spain
+1.90,Palma de Mallorca, Spain
+1.78,Pamplona, Spain
+1.62,Santa Cruz de Tenerife, Spain
+1.92,Seville (Sevilla), Spain
+1.54,Port Louis, Mauritius
+0.54,Santa Cruz, Bolivia
+1.83,Valencia, Spain
+1.31,Navi Mumbai, India
+1.76,Vigo, Spain
+1.75,Zaragoza (Saragossa), Spain
+1.02,San Juan, Puerto Rico
+1.92,Lund, Sweden
+1.33,Belo Horizonte, Brazil
+1.97,Uppsala, Sweden
+1.31,Campinas, Brazil
+2.21,Basel, Switzerland
+2.25,Bern, Switzerland
+2.32,Geneva, Switzerland
+1.69,Budva, Montenegro
+1.27,Agadir, Morocco
+2.10,Stockholm, Sweden
+0.92,Buenos Aires, Argentina
+1.60,San Jose, Costa Rica
+2.34,Lausanne, Switzerland
+1.53,Casablanca, Morocco
+2.22,Lucerne, Switzerland
+1.32,Curitiba, Brazil
+2.47,Chania, Greece
+1.77,Lodz, Poland
+1.25,Montreal, Canada
+1.07,Sao Paulo, Brazil
+1.34,Fortaleza, Brazil
+2.04,Gothenburg, Sweden
+1.47,Marrakech, Morocco
+1.47,Dnipro, Ukraine
+2.12,Nice, France
+1.42,Rabat, Morocco
+2.17,Zug, Switzerland
+2.36,Zurich, Switzerland
+0.82,Adana, Turkey
+1.41,Tangier, Morocco
+2.13,Stavanger, Norway
+0.81,Ankara, Turkey
+0.86,Antalya, Turkey
+1.64,Pristina, Kosovo (Disputed Territory)
+1.68,Dubrovnik, Croatia
+0.65,Medellin, Colombia
+1.78,Constanta, Romania
+0.83,Bursa, Turkey
+1.24,Pattaya, Thailand
+1.97,Jerusalem, Israel
+0.85,Knoxville, United States
+1.14,Kingston, Canada
+0.80,Eskisehir, Turkey
+0.82,Trinidad, Trinidad And Tobago
+1.96,Malaga, Spain
+0.84,Istanbul, Turkey
+1.32,Porto Alegre, Brazil
+0.86,Izmir, Turkey
+2.45,Espoo, Finland
+2.24,Helsinki, Finland
+0.83,Kayseri, Turkey
+1.15,Asuncion, Paraguay
+0.80,Kocaeli, Turkey
+0.81,Konya, Turkey
+1.35,Recife, Brazil
+0.82,Mersin, Turkey
+1.29,Rio de Janeiro, Brazil
+1.18,Hangzhou, China
+1.38,Salvador, Brazil
+1.30,Kochi, India
+0.87,Sharjah, United Arab Emirates
+1.08,Douala, Cameroon
+2.47,Oulu, Finland
+2.14,Treviso, Italy
+1.24,Kathmandu, Nepal
+2.42,Tampere, Finland
+2.35,Turku, Finland
+1.14,Brampton, Canada
+2.11,Bordeaux, France
+1.41,Kharkiv, Ukraine
+2.34,Heraklion, Greece
+1.44,Kiev (Kyiv), Ukraine
+1.04,Calgary, Canada
+2.13,Grenoble, France
+1.23,Brasilia, Brazil
+1.03,Edmonton, Canada
+0.91,Port of Spain, Trinidad And Tobago
+2.09,Lille, France
+1.17,Guelph, Canada
+2.18,Lyon, France
+1.13,Hamilton, Canada
+0.72,Sousse, Tunisia
+2.12,Marseille, France
+1.34,Kelowna, Canada
+1.17,Halifax, Canada
+2.14,Montpellier, France
+1.15,Kitchener, Canada
+1.41,Odessa (Odesa), Ukraine
+2.15,Nantes, France
+1.17,London, Canada
+2.21,Paris, France
+1.14,Markham, Canada
+1.16,Mississauga, Canada
+2.18,Tromso, Norway
+1.90,Ramallah, Palestine
+1.14,Oshawa, Canada
+2.21,Thessaloniki, Greece
+1.27,Ottawa, Canada
+1.18,Regina, Canada
+1.78,Kosice, Slovakia
+2.15,Toulouse, France
+0.98,Albuquerque, United States
+1.30,St. John's, Canada
+1.71,Split, Croatia
+2.26,Aachen, Germany
+1.14,Saskatoon, Canada
+2.20,Augsburg, Germany
+1.15,Windhoek, Namibia
+2.07,Berlin, Germany
+0.88,Atlanta, United States
+2.03,Aberdeen, United Kingdom
+1.39,Surrey, Canada
+0.87,Austin, United States
+1.16,Toronto, Canada
+2.29,Bonn, Germany
+1.73,Auckland, New Zealand
+1.42,Vancouver, Canada
+1.43,Victoria, Canada
+1.72,Christchurch, New Zealand
+2.28,Bremen, Germany
+1.14,Windsor, Canada
+2.02,Belfast, United Kingdom
+1.21,Winnipeg, Canada
+1.04,Boise, United States
+1.76,Hamilton, New Zealand
+0.97,Boston, United States
+2.05,Birmingham, United Kingdom
+2.20,Cologne, Germany
+1.84,George Town, Cayman Islands
+0.97,Buffalo, United States
+2.22,Darmstadt, Germany
+0.86,Charlotte, United States
+2.05,Bournemouth, United Kingdom
+2.32,Dortmund, Germany
+0.32,New Cairo, Egypt
+2.27,Dresden, Germany
+1.13,Chicago, United States
+2.03,Bristol, United Kingdom
+0.94,Cincinnati, United States
+0.91,Cleveland, United States
+2.20,Essen, Germany
+2.11,Cambridge, United Kingdom
+2.21,Frankfurt, Germany
+0.96,Columbus, United States
+2.00,Cardiff, United Kingdom
+2.20,Freiburg im Breisgau, Germany
+0.88,Dallas, United States
+1.01,Denver, United States
+2.03,Coventry, United Kingdom
+1.74,Tauranga, New Zealand
+0.92,Detroit, United States
+1.41,Playa del Carmen, Mexico
+2.15,Hamburg, Germany
+2.00,Derby, United Kingdom
+2.27,Hanover, Germany
+0.82,Fort Worth, United States
+1.83,Wellington, New Zealand
+2.01,Dundee, United Kingdom
+1.27,Fresno, United States
+1.65,Santiago, Chile
+1.37,Merida, Mexico
+2.30,Karlsruhe, Germany
+2.06,Edinburgh, United Kingdom
+2.04,Exeter, United Kingdom
+2.06,Glasgow, United Kingdom
+1.32,Honolulu, United States
+2.19,Leipzig, Germany
+0.83,Houston, United States
+2.33,Larissa, Greece
+0.96,Indianapolis, United States
+0.61,Barranquilla, Colombia
+2.18,Mannheim, Germany
+2.00,Kingston upon Hull, United Kingdom
+0.67,Bogota, Colombia
+0.61,Bucaramanga, Colombia
+2.07,Munich, Germany
+0.90,Jacksonville, United States
+2.06,Leeds, United Kingdom
+0.63,Cali, Colombia
+2.01,Leicester, United Kingdom
+0.86,Kansas City, United States
+0.62,Cartagena, Colombia
+2.24,Nuremberg, Germany
+1.20,Las Vegas, United States
+2.30,The Hague (Den Haag), Netherlands
+2.19,London, United Kingdom
+1.34,Los Angeles, United States
+0.88,Louisville, United States
+2.11,Manchester, United Kingdom
+0.94,Madison, United States
+1.98,Milton Keynes, United Kingdom
+0.89,Memphis, United States
+1.52,Valletta, Malta
+2.03,Newcastle upon Tyne, United Kingdom
+0.92,Miami, United States
+0.95,Milwaukee, United States
+0.95,Minneapolis, United States
+0.87,Ajman, United Arab Emirates
+0.98,Taichung, Taiwan
+2.01,Norwich, United Kingdom
+2.02,Nottingham, United Kingdom
+0.83,New Orleans, United States
+2.20,Stuttgart, Germany
+2.08,Oxford, United Kingdom
+1.10,New York, United States
+0.23,Lagos, Nigeria
+2.22,Wiesbaden, Germany
+2.03,Reading, United Kingdom
+1.33,Oakland, United States
+0.87,Oklahoma City, United States
+1.23,Chandigarh, India
+0.89,Omaha, United States
+0.94,Orlando, United States
+2.03,Sheffield, United Kingdom
+2.12,Athens, Greece
+1.00,Philadelphia, United States
+2.01,Southampton, United Kingdom
+1.13,Phoenix, United States
+1.05,Pittsburgh, United States
+2.34,Patras, Greece
+1.18,Portland, United States
+1.03,Raleigh, United States
+1.17,Reno, United States
+0.88,Richmond, United States
+2.03,Swansea, United Kingdom
+1.31,Sacramento, United States
+1.88,Budapest, Hungary
+0.87,Saint Louis, United States
+1.75,Debrecen, Hungary
+0.89,Saint Petersburg, United States
+1.05,Salt Lake City, United States
+0.87,San Antonio, United States
+1.32,Quebec City, Canada
+1.41,San Diego, United States
+1.43,San Francisco, United States
+1.70,Szeged, Hungary
+1.34,San Jose, United States
+1.31,Seattle, United States
+1.13,Spokane, United States
+1.25,Tacoma, United States
+1.96,Malmo, Sweden
+0.93,Tampa, United States
+1.01,Tucson, United States
+1.00,Washington, United States
+2.02,Montevideo, Uruguay
+1.21,Abidjan, Ivory Coast
+1.34,Kigali, Rwanda
+2.05,Brighton, United Kingdom
+2.47,Reykjavik, Iceland
+1.31,Baguio, Philippines
+0.50,Caracas, Venezuela
+1.39,Cancun, Mexico
+1.52,Dakar, Senegal
+1.35,Cebu, Philippines
+2.04,Cork, Ireland
+1.34,Davao, Philippines
+1.91,Dublin, Ireland
+2.23,Heidelberg, Germany
+0.45,Penang, Malaysia
+2.06,Galway, Ireland
+1.32,Santo Domingo, Dominican Republic
+2.08,Limerick, Ireland
+1.37,Adelaide, Australia
+1.27,Yerevan, Armenia
+1.43,Manila, Philippines
+1.44,Brisbane, Australia
+0.69,Cuenca, Ecuador
+1.20,Havana, Cuba
+1.48,Canberra, Australia
+0.51,Manama, Bahrain
+0.71,Guayaquil, Ecuador
+1.31,Gold Coast, Australia
+1.30,Quezon City, Philippines
+1.34,Hobart, Australia
+1.40,Melbourne, Australia
+1.33,Perth, Australia
+2.19,Bari, Italy
+2.14,Bergamo, Italy
+1.40,Sydney, Australia
+2.13,Bologna, Italy
+2.15,Brescia, Italy
+0.31,Alexandria, Egypt
+0.76,Quito, Ecuador
+2.17,Cagliari, Italy
+2.22,Catania, Italy
+2.18,Florence, Italy
+2.19,Genoa, Italy
+1.69,Paphos, Cyprus
+2.07,Milan, Italy
+0.33,Cairo, Egypt
+1.35,Florianopolis, Brazil
+2.20,Naples, Italy
+0.67,Baku, Azerbaijan
+2.10,Padova, Italy
+2.21,Palermo, Italy
+2.19,Parma, Italy
+2.18,Rimini, Italy
+2.02,Rome, Italy
+0.34,Giza, Egypt
+2.13,Trento, Italy
+2.22,Trieste, Italy
+2.14,Turin, Italy
+2.23,Verona, Italy
+2.20,Vicenza, Italy
+1.89,Saint Helier, Jersey
+1.93,Beersheba, Israel
+2.18,Singapore, Singapore
+1.99,Douglas, Isle Of Man
+1.25,Sao Jose dos Campos, Brazil
+1.07,San Salvador, El Salvador
+0.94,Chittagong, Bangladesh
+1.21,Dhaka, Bangladesh
+1.97,Riga, Latvia
+0.79,Tehran, Iran
+1.70,Nis, Serbia
+2.01,Liverpool, United Kingdom
+1.35,Nanaimo, Canada
+1.47,Seoul, South Korea
+0.62,Al Khobar, Saudi Arabia
+1.99,Plymouth, United Kingdom
+1.17,Phnom Penh, Cambodia
+2.13,Barbados, Barbados
+0.85,Bali, Indonesia
+1.30,Colombo, Sri Lanka
+1.06,Red Deer, Canada
+1.93,Kaunas, Lithuania
+1.83,Klaipeda, Lithuania
+0.40,Baghdad, Iraq
+0.83,Alanya, Turkey
+0.96,Addis Ababa, Ethiopia
+1.21,Beijing, China
+1.33,Cape Town, South Africa
+1.27,Durban, South Africa
+1.80,Vilnius, Lithuania
+0.84,Erbil (Irbil), Iraq
+1.37,Johannesburg, South Africa
+1.17,Chengdu, China
+1.26,Port Elizabeth, South Africa
+1.27,Pretoria, South Africa
+1.18,Guangzhou, China
+1.83,Luxembourg, Luxembourg
+1.96,Haifa, Israel
+1.58,Bitola, North Macedonia
+1.96,Netanya, Israel
+1.99,Petah Tikva, Israel
+1.95,Ramat Gan, Israel
+1.20,Nanjing, China
+0.98,Kaohsiung, Taiwan
+1.93,Rehovot, Israel
+2.00,Tel Aviv-Yafo, Israel
+1.02,Taipei, Taiwan
+2.01,Guildford, United Kingdom
+1.68,Skopje, North Macedonia
+1.18,Shanghai, China
+1.01,Brooklyn, United States
+1.16,Bangkok, Thailand
+1.21,Chiang Mai, Thailand
+1.18,Shenzhen, China
+1.02,Accra, Ghana
+1.40,Amman, Jordan
+1.19,Wuhan, China
+1.25,Phuket, Thailand
+2.02,Portsmouth, United Kingdom
+1.10,Dar es Salaam, Tanzania
+0.55,Kazan, Russia
+1.35,Queretaro (Santiago de Querétaro), Mexico
+1.22,Fredericton, Canada
+1.10,Guatemala City, Guatemala
+1.32,Suva, Fiji
+1.54,Sliema, Malta
+1.29,Bhubaneswar, India
+1.61,Chisinau, Moldova
+1.10,Da Nang, Vietnam
+1.03,Georgetown, Guyana
+1.13,Hanoi, Vietnam
+1.15,Ho Chi Minh City, Vietnam
+0.36,Kuwait City, Kuwait
+0.71,Bishkek, Kyrgyzstan
+0.74,Sfax, Tunisia
+0.76,Tunis, Tunisia
+2.13,Amsterdam, Netherlands
+2.31,Breda, Netherlands
+2.26,Delft, Netherlands
+2.28,Eindhoven, Netherlands
+2.32,Enschede, Netherlands
+2.29,Groningen, Netherlands
+2.27,Haarlem, Netherlands
+2.30,Maastricht, Netherlands
+2.33,Nijmegen, Netherlands
+2.27,Rotterdam, Netherlands
+2.28,Tilburg, Netherlands
+2.28,Utrecht, Netherlands
+0.90,Sarasota, United States
+1.10,Beirut, Lebanon
+1.56,Kampala, Uganda
+2.16,Bergen, Norway
+1.33,Goiania, Brazil
+2.26,Oslo, Norway
+2.13,Trondheim, Norway
+1.72,Krakow (Cracow), Poland
+0.90,Fort Lauderdale, United States
+1.74,Gdansk, Poland
+0.87,Nashville, United States
+1.25,Nairobi, Kenya
+1.19,St.Catharines, Canada
+1.74,Katowice, Poland
+1.31,Tbilisi, Georgia
+1.23,Suzhou, China
+0.62,Muscat, Oman
+1.77,Poznan, Poland
+1.72,Szczecin, Poland
+1.73,Warsaw, Poland
+1.80,Wroclaw, Poland
+2.23,Dusseldorf, Germany
+2.14,Aveiro, Portugal
+0.87,Islamabad, Pakistan
+2.11,Braga, Portugal
+1.24,Noida, India
+2.13,Cascais, Portugal
+2.08,Coimbra, Portugal
+0.96,Karachi, Pakistan
+0.90,Lahore, Pakistan
+2.86,Hong Kong, Hong Kong (China)
+2.04,Funchal, Portugal
+2.03,Leiria, Portugal
+2.03,Lisbon, Portugal
+2.32,Tirana, Albania
+1.98,Porto, Portugal
+1.38,Batumi, Georgia
+1.76,Brasov, Romania
+1.59,Bucharest, Romania
+1.22,Ahmedabad, India
+1.64,Cluj-Napoca, Romania
+1.74,Craiova, Romania
+1.96,Graz, Austria
+1.28,Bangalore, India
+1.92,Innsbruck, Austria
+1.31,Bhopal, India
+1.76,Iasi, Romania
+1.28,Chennai, India
+1.26,Coimbatore, India
+1.75,Oradea, Romania
+0.57,Doha, Qatar
+1.22,Delhi, India
+1.94,Linz, Austria
+2.01,Salzburg, Austria
+1.24,Gurgaon, India
+1.71,Sibiu, Romania
+0.62,Ad Dammam, Saudi Arabia
+1.88,Vienna, Austria
+1.36,Hyderabad, India
+1.93,Villach, Austria
+1.31,Indore, India
+1.34,Jaipur, India
+0.03,Tripoli, Libya
+1.78,Timisoara, Romania
+1.38,Kingston, Jamaica
+1.30,Kolkata, India
+1.24,Lucknow (Lakhnau), India
+0.61,Jeddah (Jiddah), Saudi Arabia
+1.31,Mumbai, India
+0.61,Riyadh, Saudi Arabia
+0.58,Kaliningrad, Russia
+1.30,Pune, India
+0.98,Minsk, Belarus
+1.60,Harare, Zimbabwe
+1.26,Surat, India
+0.58,Krasnodar, Russia
+1.22,Vadodara, India
+0.58,Moscow, Russia
+0.86,Bandung, Indonesia
+0.56,Nizhny Novgorod, Russia
+0.90,Jakarta, Indonesia
+2.08,Antwerp, Belgium
+1.42,Lviv, Ukraine
+0.56,Novosibirsk, Russia
+2.08,Brussels, Belgium
+2.08,Gent, Belgium
+0.84,Surabaya, Indonesia
