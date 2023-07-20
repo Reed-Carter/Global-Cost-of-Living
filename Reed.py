@@ -17,15 +17,17 @@ import matplotlib.pyplot as plt
 with_lat_long_file = "./data/data_with_lat_long.csv"
 lat_long_df = pd.read_csv(with_lat_long_file, header=0, 
                       usecols=["latitude", "longitude", 'Gasoline (1 liter) (USD)','country', 'gas_price_per_gallon'])
-#manually add data for DRC
+#manually add data for DRC, Congo, Central African Rep., and South Sudan
 lat_long_df.loc[len(lat_long_df.index)] = {'country': 'Dem. Rep. Congo' , 'gas_price_per_gallon': 5.277, 'latitude': 43.804133, 'longitude': -120.554201}
 lat_long_df.loc[len(lat_long_df.index)] = {'country': 'Congo' , 'gas_price_per_gallon': 3.79, 'latitude': 18.220833, 'longitude': -66.590149}
 lat_long_df.loc[len(lat_long_df.index)] = {'country': 'Central African Rep.' , 'gas_price_per_gallon': 9.104, 'latitude': 41.203322, 'longitude': -77.194525}
 lat_long_df.loc[len(lat_long_df.index)] = {'country': 'S. Sudan', 'gas_price_per_gallon': 4.062, 'latitude': 8.7666, 'longitude': 27.400066,}
 
 print(lat_long_df[lat_long_df.eq("Dem. Rep. Congo").any(1)])
+
 #creates a new column averaging the gas price per country
 lat_long_df['avg_gas_price_per_country'] = np.round(lat_long_df.groupby(['country'])[['gas_price_per_gallon']].transform(np.mean), decimals = 1)
+
 #drop the duplicates to only present one country and its average price of gas
 lat_long_df.drop_duplicates(ignore_index=True, subset=['country','avg_gas_price_per_country'], inplace=True)
 
@@ -135,7 +137,7 @@ cities_lat_long.dropna(subset=['gas_price_per_liter'], inplace=True)
 def liter_to_gallon(value):
   gallon = value*3.785411784
   return gallon
-cities_lat_long['gas_price_per_gallon'] = np.round(cities_lat_long['gas_price_per_liter'].map(liter_to_gallon), decimals=2)
+cities_lat_long['gas_price_per_gallon'] = np.round(cities_lat_long['gas_price_per_liter'].map(liter_to_gallon), 2).map('{:0.2f}'.format)
 
 # Create a world map to show global gas prices 
 import folium
@@ -155,6 +157,6 @@ for i in range(len(cities_lat_long)):
                                         cities_lat_long.iloc[i]['city'],
                                    cities_lat_long.iloc[i]['gas_price_per_gallon']
                                    )
-        folium.CircleMarker(location = [lat, long], radius=radius, popup= popup_text, fill =True).add_to(marker_cluster)
+        folium.CircleMarker(location=[lat, long], radius=radius, popup=folium.Popup(popup_text, max_width=300), fill=True).add_to(marker_cluster)
 #show the map
 world_map_cities
